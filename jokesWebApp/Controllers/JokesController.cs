@@ -19,10 +19,10 @@ namespace jokesWebApp.Controllers
             _context = context;
         }
 
-        // GET: Jokes
-        public async Task<IActionResult> Index()
+        // GET: Jokes/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
         {
-            return View(await _context.Joke.ToListAsync());
+            return View("ShowSearchForm");
         }
 
         // GET: Jokes/Details/5
